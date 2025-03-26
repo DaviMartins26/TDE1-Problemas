@@ -1,7 +1,7 @@
-public class Fila {
-    private int inicio = -0;
+public class Fila extends Pilha{
+    private int inicio = 0;
     private int fim = 0;
-    private int tamanho = 4;
+    private int tamanho = 5;
     private int fila[];
 
     public Fila(){
@@ -43,7 +43,6 @@ public class Fila {
         for (int i = inicio; i != fim; i = (i + 1) % tamanho) {
             System.out.print(fila[i] + " ");
         }
-        System.out.println();
     }
     public int getPrimeiro(){
         int primeiro = fila[inicio];
